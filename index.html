@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus // Digital Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #ededed; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed top-0 w-full z-50 p-6 flex justify-between items-center">
+        <div class="text-xl font-bold tracking-tighter text-[#FF9C5B]">NEXUS.</div>
+        <div class="space-x-8 text-sm uppercase tracking-widest opacity-70">
+            <a href="#" class="hover:opacity-100 transition">Work</a>
+            <a href="#" class="hover:opacity-100 transition">About</a>
+            <a href="#" class="hover:opacity-100 transition">Contact</a>
+        </div>
+    </nav>
+
+    <main class="h-screen flex flex-col justify-center px-12 lg:px-32">
+        <h1 class="text-6xl lg:text-8xl font-light leading-none tracking-tighter">
+            Engineering <br> 
+            <span class="text-[#FF9C5B] italic font-semibold">Digital Motion.</span>
+        </h1>
+        <p class="mt-8 max-w-md text-gray-400 leading-relaxed">
+            Specializing in high-performance web experiences and fluid animations for the next generation of tech.
+        </p>
+        <button class="mt-12 w-fit px-8 py-4 glass rounded-full hover:bg-white hover:text-black transition-all duration-500">
+            View Projects ↓
+        </button>
+    </main>
+
+    <section class="p-12 lg:px-32 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="h-96 glass rounded-2xl p-8 flex flex-col justify-end">
+            <span class="text-xs uppercase opacity-50">Animation</span>
+            <h3 class="text-2xl mt-2">iPhone 17 Reveal Concept</h3>
+        </div>
+        <div class="h-96 glass rounded-2xl p-8 flex flex-col justify-end">
+            <span class="text-xs uppercase opacity-50">Web App</span>
+            <h3 class="text-2xl mt-2">Fintech Dashboard</h3>
+        </div>
+    </section>
+
+</body>
+</html>
